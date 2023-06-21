@@ -5,10 +5,10 @@ mongoose.plugin(slug)
 const Schema = mongoose.Schema
 
 const Toy = new Schema({
-    name: { type: String, maxLength: 255, required: true },
-    description: { type: String, maxLength: 600, required: true },
-    price: { type: String, maxLength: 100, required: true },
-    image: { type: String, maxLength: 700 },
+    name: { type: String, minLength: 1, required: true },
+    description: { type: String, minLength: 1, required: true },
+    price: { type: String, minLength: 1, required: true },
+    image: { type: String, minLength: 1 },
     slug: { type: String, slug: 'name', unique: true }
 }, {
     timestamps: true,
