@@ -25,7 +25,7 @@ class ToyController {
 
             })
 
-        res.send('Save')
+
     }
 
     // [GET] /toys/:id/edit
