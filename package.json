@@ -8,16 +8,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "huynhcongchien",
+  "author": "ltn23",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wowwhat1/nodejs_project.git"
+    "url": "git+https://github.com/ltn23/cloud_asm.git"
   },
   "bugs": {
-    "url": "https://github.com/Wowwhat1/nodejs_project/issues"
+    "url": "https://github.com/ltn23/cloud_asm/issues"
   },
-  "homepage": "https://github.com/Wowwhat1/nodejs_project#readme",
+  "homepage": "https://github.com/ltn23/cloud_asm#readme",
   "description": "",
   "dependencies": {
     "express": "^4.18.2",
