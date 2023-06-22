@@ -37,11 +37,19 @@ class ToyController {
             .catch(next)
     }
 
-    // [PUT] /toys/:id/update
+    // [PUT] /toys/:id
     update(req, res, next) {
-        Toy.updateOne({ _id: req.param.id }, req.body)
+        Toy.updateOne({ _id: req.params.id }, req.body)
             .then(() => res.redirect('/me/stored/toys'))
             .catch(next)
+    }
+
+    // [DELETE] /toys/:id
+    delete(req, res, next) {
+
+        Toy.deleteOne({ _id: req.params.id })
+        .then(() => res.redirect('back'))
+        .catch(next)
     }
 }
 
